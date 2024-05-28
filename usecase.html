@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kirjaudu sisään</title>
+    <style>
+        #loginForm {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        #loginBtn {
+            display: block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #loginBtn:hover {
+            background-color: #0056b3;
+        }
+        #loginHeader {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="useCaseDiagram" width="500" height="300"></canvas>
+
+    <div id="loginForm">
+        <div id="loginHeader">Kirjaudu sisään</div>
+
+        <label for="username">Käyttäjänimi:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Salasana:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="role">Rooli:</label>
+        <select id="role" name="role">
+            <option value="user">Käyttäjä</option>
+            <option value="admin">Ylläpitäjä</option>
+        </select><br><br>
+
+        <button id="loginBtn">Kirjaudu sisään</button>
+        <a href="luotili.html">Luo käyttäjätili</a>
+    </div>
+
+    <script src="usecase.js"></script>
+</body>
+</html>

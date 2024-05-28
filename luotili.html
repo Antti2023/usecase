@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luo tili</title>
+    <style>
+        #registerForm {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        #registerBtn {
+            display: block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #registerBtn:hover {
+            background-color: #0056b3;
+        }
+        #backBtn {
+            display: block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+        }
+        #backBtn:hover {
+            background-color: #c82333;
+        }
+        #registerHeader {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="useCaseDiagram" width="500" height="300"></canvas>
+
+    <div id="registerForm">
+        <div id="registerHeader">Luo käyttäjätili</div>
+
+        <label for="regUsername">Käyttäjänimi:</label>
+        <input type="text" id="regUsername" name="regUsername"><br><br>
+
+        <label for="regPassword">Salasana:</label>
+        <input type="password" id="regPassword" name="regPassword"><br><br>
+
+        <label for="role">Rooli:</label>
+        <select id="role" name="role">
+            <option value="user">Käyttäjä</option>
+            <option value="admin">Ylläpitäjä</option>
+        </select><br><br>
+
+        <button id="registerBtn">Tallenna käyttäjätili</button>
+        <a href="usecase.html" id="backBtn">Takaisin kirjautumiseen</a>
+    </div>
+
+    <script src="registration.js"></script>
+</body>
+</html>
